@@ -1,347 +1,416 @@
-<!DOCTYPE html>
+<!DOCTYPE html><html class="dark" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+ <title>Full Stack Web Developer</title>
+    <meta name="description" content="Full-Stack Developer portfolio of Paul Opaco. Showcasing modern web applications, clean code, and end-to-end development solutions.">
+  <link rel="icon" type="image/png" href="https://pvtopaco-arch.github.io/webportfolio/images/newlogo.png">
 
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Paul Opaco | Full Stack Engineer</title>
+  <meta property="og:url" content="https://pvtopaco-arch.github.io/webportfolio/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Full Stack Web Developer">
+    <meta property="og:description" content="Full-Stack Developer portfolio of Paul Opaco. Showcasing modern web applications, clean code, and end-to-end development solutions.">
+    <meta property="og:image" content="https://pvtopaco-arch.github.io/webportfolio/images/newlogo.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="pvtopaco-arch.github.io">
+    <meta property="twitter:url" content="https://pvtopaco-arch.github.io/webportfolio/">
+    <meta name="twitter:title" content="Full Stack Web Developer">
+    <meta name="twitter:description" content="Full-Stack Developer portfolio of Paul Opaco. Showcasing modern web applications, clean code, and end-to-end development solutions.">
+    <meta name="twitter:image" content="https://pvtopaco-arch.github.io/webportfolio/images/newlogo.png">
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href=" ./index.css">
+
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700;800&amp;family=Inter:wght@400;600&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                "on-tertiary-container": "#01060b",
-                "on-primary": "#002c70",
-                "on-primary-container": "#ffffff",
-                "on-surface-variant": "#c2c6d8",
-                "on-secondary": "#003543",
-                "text-secondary": "#A1A1AA",
-                "primary-fixed-dim": "#b1c5ff",
-                "outline-variant": "#424655",
-                "tertiary-fixed-dim": "#bfc8d0",
-                "outline": "#8c90a1",
-                "surface-container-high": "#282a2e",
-                "tertiary": "#bfc8d0",
-                "tertiary-fixed": "#dbe4ed",
-                "inverse-surface": "#e2e2e8",
-                "inverse-primary": "#0057ce",
-                "border-subtle": "rgba(255, 255, 255, 0.1)",
-                "surface-dim": "#111317",
-                "surface-tint": "#b1c5ff",
-                "background": "#111317",
-                "primary": "#b1c5ff",
-                "surface-container": "#1e2024",
-                "on-secondary-fixed-variant": "#004e60",
-                "primary-fixed": "#dae2ff",
-                "on-secondary-fixed": "#001f28",
-                "surface-glass": "rgba(255, 255, 255, 0.03)",
-                "on-tertiary": "#293138",
-                "surface-variant": "#333539",
-                "tertiary-container": "#6f7880",
-                "primary-container": "#0d6efd",
-                "surface-container-highest": "#333539",
-                "surface-elevated": "#1A1D23",
-                "on-tertiary-fixed-variant": "#3f484f",
-                "inverse-on-surface": "#2f3035",
-                "on-error": "#690005",
-                "on-error-container": "#ffdad6",
-                "text-primary": "#FFFFFF",
-                "secondary-fixed-dim": "#4cd6ff",
-                "surface": "#111317",
-                "secondary-container": "#14d1ff",
-                "on-tertiary-fixed": "#141d23",
-                "on-primary-fixed-variant": "#00419e",
-                "on-primary-fixed": "#001946",
-                "on-secondary-container": "#00566b",
-                "surface-container-low": "#1a1c20",
-                "on-background": "#e2e2e8",
-                "secondary-fixed": "#b7eaff",
-                "error-container": "#93000a",
-                "surface-container-lowest": "#0c0e12",
-                "on-surface": "#e2e2e8",
-                "error": "#ffb4ab",
-                "secondary": "#a6e6ff",
-                "surface-bright": "#37393e"
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#10b981",
+                        "primary": "#4edea3",
+                        "on-tertiary-fixed": "#410005",
+                        "secondary-fixed-dim": "#89ceff",
+                        "on-background": "#dae2fd",
+                        "surface-bright": "#31394d",
+                        "surface-container-low": "#131b2e",
+                        "surface-tint": "#4edea3",
+                        "surface-container": "#171f33",
+                        "on-tertiary-fixed-variant": "#842225",
+                        "surface-container-high": "#222a3d",
+                        "tertiary": "#ffb3af",
+                        "surface-dim": "#0b1326",
+                        "on-error": "#690005",
+                        "on-tertiary": "#650911",
+                        "surface-container-lowest": "#060e20",
+                        "secondary-container": "#00a2e6",
+                        "error-container": "#93000a",
+                        "on-primary-fixed": "#002113",
+                        "surface-variant": "#2d3449",
+                        "on-primary-fixed-variant": "#005236",
+                        "outline": "#86948a",
+                        "on-primary": "#003824",
+                        "inverse-primary": "#006c49",
+                        "on-error-container": "#ffdad6",
+                        "on-primary-container": "#00422b",
+                        "primary-fixed": "#6ffbbe",
+                        "on-secondary": "#00344d",
+                        "on-secondary-fixed": "#001e2f",
+                        "on-tertiary-container": "#711419",
+                        "secondary-fixed": "#c9e6ff",
+                        "on-surface": "#dae2fd",
+                        "background": "#0b1326",
+                        "outline-variant": "#3c4a42",
+                        "error": "#ffb4ab",
+                        "tertiary-fixed": "#ffdad7",
+                        "inverse-surface": "#dae2fd",
+                        "surface": "#0b1326",
+                        "on-secondary-fixed-variant": "#004c6e",
+                        "on-secondary-container": "#00344e",
+                        "surface-container-highest": "#2d3449",
+                        "tertiary-fixed-dim": "#ffb3af",
+                        "tertiary-container": "#fc7c78",
+                        "secondary": "#89ceff",
+                        "on-surface-variant": "#bbcabf",
+                        "primary-fixed-dim": "#4edea3",
+                        "inverse-on-surface": "#283044"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "section-gap-desktop": "120px",
+                        "gutter": "24px",
+                        "container-max": "1120px",
+                        "section-gap-mobile": "64px"
+                    },
+                    "fontFamily": {
+                        "label-code": ["JetBrains Mono"],
+                        "label-sm": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "display": ["Hanken Grotesk"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "label-code": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "display": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}]
+                    }
+                },
             },
-            "borderRadius": {
-                "DEFAULT": "0.25rem",
-                "lg": "8px",
-                "xl": "12px",
-                "full": "9999px"
-            },
-            "spacing": {
-                "stack-md": "16px",
-                "stack-sm": "8px",
-                "margin-mobile": "20px",
-                "section-gap": "120px",
-                "container-max": "1280px",
-                "stack-lg": "32px",
-                "gutter": "24px"
-            },
-            "fontFamily": {
-                "label-sm": ["Inter"],
-                "body-md": ["Inter"],
-                "headline-xl": ["Inter"],
-                "headline-md": ["Inter"],
-                "display-lg": ["Inter"],
-                "headline-lg-mobile": ["Inter"],
-                "body-lg": ["Inter"],
-                "headline-lg": ["Inter"]
-            },
-            "fontSize": {
-                "label-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "700"}],
-                "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
-                "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.04em", "fontWeight": "800"}],
-                "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
-                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
-            }
-          },
-        },
-      }
+        }
     </script>
 <style>
         body {
-            background-color: #0F1115;
-            color: #e2e2e8;
-            overflow-x: hidden;
+            background-color: #0b1326;
+            color: #dae2fd;
+            -webkit-font-smoothing: antialiased;
         }
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        .glass-card {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(20px);
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            border-left: 1px solid rgba(255, 255, 255, 0.1);
+        .project-card:hover {
+            border-color: #4edea3;
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px -15px rgba(78, 222, 163, 0.2);
         }
-        .glow-hover:hover {
-            box-shadow: 0 0 20px rgba(13, 110, 253, 0.2);
+        .glass-effect {
+            background: rgba(23, 31, 51, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
         }
     </style>
 </head>
-<body class="font-body-md text-body-md">
+<body class="font-body-md text-body-md selection:bg-primary/30">
 <!-- TopAppBar -->
-<header class="bg-surface-glass backdrop-blur-md fixed top-0 w-full z-50 border-b border-border-subtle shadow-sm">
-<nav class="flex justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto h-16">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary" data-icon="terminal">terminal</span>
-<span class="font-headline-md text-headline-md font-bold tracking-tighter text-primary">ENGINEER.IO</span>
+<header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant">
+<div class="flex justify-between items-center px-margin-mobile md:px-gutter h-16 w-full max-w-container-max mx-auto">
+<div class="flex items-center gap-3">
+<img alt="Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoLV0MlkE8Dzzg8N-KIKMBV4zj9xiSwqNyTZ34mcSGMlY2YCK32LgLFmipdaz13UhIT1JhZo36WdHCzSjff_ITPABH9f3-kIcZL7YWaXIQLUWG07tKvgYF7vrJsUqMJyMEi18IpsmH09wkhYgljtdjLc2-Ltmkf29oll3sgQu1E72RyVvZQ-5iWEm9OwXMdpozAGNb1sxtow99_cZNVBY7XgT3fJKERZo0wc7NvoSic2m6V5D2batltZcHOEQjpwRFcQTw9yEAYaHZuw">
+<span class="font-display text-headline-md font-bold text-primary tracking-tight">PaulOpaco</span>
 </div>
-<div class="hidden md:flex items-center gap-stack-lg">
-<a class="text-primary font-bold border-b-2 border-primary pb-1 hover:text-primary transition-colors duration-300" href="#projects">Projects</a>
-<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300" href="#tools">Tools</a>
-<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300" href="#contact">Contact</a>
+<button class="text-primary active:scale-95 transition-transform p-2" onclick="toggleDrawer()">
+<span class="material-symbols-outlined text-[32px]">menu</span>
+</button>
 </div>
-<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-label-sm text-label-sm active:opacity-80 transition-all">
-                Contact
-            </button>
-</nav>
 </header>
-<main class="pt-16">
+<!-- Navigation Drawer (Mobile) -->
+<div class="fixed inset-0 z-[60] hidden" id="drawer">
+<div class="absolute inset-0 bg-black/60" onclick="toggleDrawer()"></div>
+<aside class="fixed inset-y-0 right-0 w-64 bg-surface-container-high shadow-lg flex flex-col p-unit transform translate-x-full transition-transform duration-300 ease-in-out" id="drawer-content">
+<div class="flex justify-between items-center p-4">
+<span class="font-display text-headline-md font-bold text-primary">NAVIGATION</span>
+<button class="text-on-surface-variant" onclick="toggleDrawer()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex flex-col mt-4">
+<a class="flex items-center gap-4 p-4 text-primary font-bold border-r-2 border-primary hover:bg-surface-variant transition-all" href="#projects">
+<span class="material-symbols-outlined">code</span>
+<span class="font-label-sm text-label-sm">Projects</span>
+</a>
+<a class="flex items-center gap-4 p-4 text-on-surface-variant hover:bg-surface-variant transition-all" href="#tools">
+<span class="material-symbols-outlined">layers</span>
+<span class="font-label-sm text-label-sm">Stack</span>
+</a>
+<a class="flex items-center gap-4 p-4 text-on-surface-variant hover:bg-surface-variant transition-all" href="#contact">
+<span class="material-symbols-outlined">mail</span>
+<span class="font-label-sm text-label-sm">Contact</span>
+</a>
+</nav>
+</aside>
+</div>
+<main class="mt-16">
 <!-- Hero Section -->
-<section class="min-h-[80vh] flex flex-col justify-center items-center text-center px-margin-mobile max-w-container-max mx-auto py-stack-lg">
-<div class="relative mb-stack-lg group">
-<div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-<img alt="Paul Opaco" class="relative rounded-full w-48 h-48 md:w-64 md:h-64 object-cover border-2 border-border-subtle shadow-2xl" src="https://lh3.googleusercontent.com/aida/ADBb0uj-fp6DXBnKYF1c64KdYwEIR-NlAVNbWaQAFAXTOeYBzIsNNx78RQMrOJZwauACFv0ZkMPxWy9jSrDu5pU8PKwOr2PWclMCv5MYy6NGALWNf_ZzpDbfAH0j8ducFdLzmYnBW5kosaG1RKU6h0i4ixGlSW--esRZ5omaaVRoIrneMfC6fOMFYTrfwWh_PAi1C7pBFaUtmfrg-a39jIT-wdvg1XuUVhcoEft6MO6JqjGuonlM8cRPdnFAGA"/>
+<section class="px-margin-mobile py-section-gap-mobile flex flex-col items-center text-center max-w-container-max mx-auto overflow-hidden">
+<div class="relative mb-8">
+<div class="absolute inset-0 bg-primary/10 blur-[80px] rounded-full"></div>
+<div class="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-2 border-primary/20 p-2">
+<img alt="Paul Opaco" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida/ADBb0uhvcct2KTZsNYU97GVM11wXILrH5_-NzsQfEAWKWKc1DlotPF1mtrNTN-BcOSA7brJf4TjQ-138-RCNYGG3KRANzwyT6qakw3MEani-DoUp80RGY03yRhyc78LKtwETK30s7M_9SPOb3yzQVr4w9awHdsOssqKaIHIFKOlJnM8-wwcyQXkn72iaFo_KiyZs8u4sAQY4eMKY-Z0QjkodgagulWUwz_C6HeUTdUOw-YqTbcSLl83AcSWo3Q">
 </div>
-<div class="inline-block bg-surface-container-high px-4 py-1 rounded-full border border-border-subtle mb-stack-md">
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Full Stack Web Developer</span>
 </div>
-<h1 class="font-display-lg text-display-lg md:text-[80px] leading-tight mb-stack-md text-text-primary">
+<span class="font-label-code text-label-code text-primary-container bg-primary-container/10 px-4 py-1 rounded-full border border-primary-container/20 mb-6">
+                FULL STACK WEB DEVELOPER
+            </span>
+<h1 class="font-display text-headline-lg-mobile md:text-display text-on-background mb-4 leading-tight">
                 Hi, I'm <span class="text-primary">Paul Opaco</span>
 </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-stack-lg">
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-10">
                 I enjoy building things that live on the internet, from websites to web apps. I am currently better at the first one, but I'm always learning.
             </p>
-<div class="flex flex-col md:flex-row gap-stack-md">
-<a class="bg-primary text-on-primary px-8 py-4 rounded-lg font-label-sm text-label-sm hover:scale-105 transition-transform" href="#projects">
-                    View work
-                </a>
-<button class="border border-primary text-primary px-8 py-4 rounded-lg font-label-sm text-label-sm hover:bg-primary/10 transition-colors">
-                    About me
-                </button>
+<div class="flex flex-col gap-4 w-full max-w-xs">
+<a class="bg-primary-container text-on-primary-container font-bold py-4 rounded-xl flex items-center justify-center gap-2 hover:brightness-110 active:scale-95 transition-all" href="#projects">
+                    View work <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+<a class="bg-transparent border border-outline-variant text-primary font-bold py-4 rounded-xl flex items-center justify-center gap-2 hover:border-primary active:scale-95 transition-all" href="#">
+                    View Resume <span class="material-symbols-outlined">description</span>
+</a>
 </div>
 </section>
-<!-- Projects Section (Bento Grid Style) -->
-<section class="py-section-gap px-margin-mobile max-w-container-max mx-auto" id="projects">
-<div class="flex flex-col items-center mb-stack-lg">
-<h2 class="font-headline-xl text-headline-xl text-text-primary mb-4">Selected Works</h2>
-<div class="w-16 h-1 bg-primary rounded-full"></div>
+<!-- Projects Section -->
+<section class="px-margin-mobile py-section-gap-mobile bg-surface-container-lowest" id="projects">
+<div class="max-w-container-max mx-auto">
+<div class="flex items-center gap-4 mb-12">
+<h2 class="font-display text-headline-lg-mobile text-primary">My Projects</h2>
+<div class="h-[2px] flex-grow bg-outline-variant"></div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 <!-- Project 1 -->
-<div class="glass-card rounded-xl overflow-hidden group glow-hover transition-all duration-300">
-<div class="h-56 overflow-hidden bg-surface-container-lowest flex items-center justify-center">
-<img alt="E-commerce API" class="w-full h-full object-cover opacity-80 group-hover:scale-110 group-hover:opacity-100 transition-all duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0uiGxftdkZ-aUnejpaUog6EJMDFjNm-6BiOAQnm9_unfsm8uEBUR4Q9fyxsxErOIPCkwTUFJ7Lx08HupxEFOV3XDpcDwunWqQJGb3nDt6F8ISNhRcpy8wMYRM0u8NN05nWBdX7lKB-zovdWPPeJ-moLlI0bHs3CP4ecvsW50QKagxPV8ss4LjO_shx9TMIYA6L-_TTF1WRh5TnIUwfDZyAlQPQCgTgh-rbNJf9YH0MVtREfKl2jdJIYahDw"/>
+<article class="project-card flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant transition-all duration-300">
+<div class="aspect-video overflow-hidden">
+<img alt="E-commerce API" class="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida/ADBb0ujrEeJeIehryGjO-olqlcKxk0bmhM48lP4lsSXURgxACjMtM5QxPL61iU2NsaBNO98_SK9UJ6Cu24rg4LQgkoNlWMAuJGdgAweRbWjIi5aqo9mWVqJ0fClVr5fb_4uFSNCHczXzMiIpUGFVn7U3LzWD1MNXEsuVBLkE5AiANxlqwQIoTuAM75mFuDcJiMw7zTLCHRcmDVRVBSwCXKsp7M3lkAfm_xz1WuDaQkN5gTmnnsjvh7l2jiSiL60">
 </div>
-<div class="p-stack-lg">
-<h3 class="font-headline-md text-headline-md text-primary mb-2">E-commerce API Documentation</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">
-                            Dynamic E-Commerce Workflow Management. The system features dynamic routes for order processing, real-time inventory updates, and secure user authentication.
-                        </p>
-<div class="flex flex-wrap gap-2">
-<span class="bg-primary/10 text-secondary px-3 py-1 rounded font-label-sm text-label-sm">Postman</span>
-<span class="bg-primary/10 text-secondary px-3 py-1 rounded font-label-sm text-label-sm">Backend</span>
+<div class="p-6">
+<div class="flex gap-2 mb-4">
+<span class="font-label-code text-[12px] text-primary bg-primary/10 px-2 py-0.5 rounded border border-primary/20">Node.js</span>
+<span class="font-label-code text-[12px] text-secondary bg-secondary/10 px-2 py-0.5 rounded border border-secondary/20">Postman</span>
 </div>
+<h3 class="font-display text-headline-md text-on-surface mb-3">E-commerce API Documentation</h3>
+<p class="text-on-surface-variant font-body-md line-clamp-3">
+                                Dynamic E-Commerce Workflow Management. The system features dynamic routes for order processing, real-time inventory updates, and secure user authentication.
+                            </p>
 </div>
-</div>
+</article>
 <!-- Project 2 -->
-<div class="glass-card rounded-xl overflow-hidden group glow-hover transition-all duration-300">
-<div class="h-56 overflow-hidden bg-surface-container-lowest flex items-center justify-center">
-<img alt="Course Booking API" class="w-full h-full object-cover opacity-80 group-hover:scale-110 group-hover:opacity-100 transition-all duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0uiQk2Zwb76BCi5hF0uxE-gbL6eF54iTTr9GT4fjlMBlcCyAbCgaKK2jn_AEtwQHiA5tMGg5WWjsDfhHYtW7gDjB7VqkN5H8ygAiOVv1EEZrj_nM8HxeXFBYkVv6-f9l0wnjb4PsQGxR1zPoRZGlF9w-_rFsGZiqAD1gitFoNvxlqiDl6RxUFJsaS2CBlAshKpSPkTvDkyiY_rD-El1Ptojs9TYBA5zdC6PCTzFeiev6fTLbYtglcPzg4Q"/>
+<article class="project-card flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant transition-all duration-300">
+<div class="aspect-video overflow-hidden">
+<img alt="Course Booking API" class="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida/ADBb0uilyU2c-NaQTVBcpCPrBbMgd3Jrdf8K8gf0Ww58CTSQiss_8MqocffksuqHvaNyieCUU92NCGLD9sINOJjM6k3L-1spnZZnInyCyXMXr2NnrI1cH8a0jfQJjZXsxnIjaWx5jvfFUJyfzk1eMARU9jdtDY8lokI4Q350YRzt3hkJQJgQN7zL-jTuo-ISgl8eduEhVWDdvWWlyXp9mJguCpDTOfuTqt79NuNNP2RBwjQENnafsyo6FHLuAf8">
 </div>
-<div class="p-stack-lg">
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Course Booking API Documentation</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">
-                            RESTful API for managing course enrollments, featuring user registration, authentication, and retrieval of user details.
-                        </p>
-<div class="flex flex-wrap gap-2">
-<span class="bg-primary/10 text-secondary px-3 py-1 rounded font-label-sm text-label-sm">Node.js</span>
-<span class="bg-primary/10 text-secondary px-3 py-1 rounded font-label-sm text-label-sm">REST</span>
+<div class="p-6">
+<div class="flex gap-2 mb-4">
+<span class="font-label-code text-[12px] text-primary bg-primary/10 px-2 py-0.5 rounded border border-primary/20">REST</span>
+<span class="font-label-code text-[12px] text-secondary bg-secondary/10 px-2 py-0.5 rounded border border-secondary/20">Express</span>
 </div>
+<h3 class="font-display text-headline-md text-on-surface mb-3">Course Booking API</h3>
+<p class="text-on-surface-variant font-body-md line-clamp-3">
+                                RESTful API for managing course enrollments, featuring user registration, authentication, and retrieval of user details.
+                            </p>
 </div>
-</div>
+</article>
 <!-- Project 3 -->
-<div class="glass-card rounded-xl overflow-hidden group glow-hover transition-all duration-300">
-<div class="h-56 overflow-hidden bg-surface-container-lowest flex items-center justify-center">
-<img alt="Course Booking App" class="w-full h-full object-cover opacity-80 group-hover:scale-110 group-hover:opacity-100 transition-all duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0uhmrFie--mDDhpocuD6NAYATeoHinTthjLX3cSr4kii0rHdCqXr96KNXBbpkZ0pIbeGxgJw4aFCGhuCH2Hf3ncpG507bj_Hmz5_U4n025zaWYjfQEG7Zn0zm3DzLOcm_y59tRMR_7oUbs_a8UWRKZCe-zjCIBDqM7V4i6kD0H-Q8euy3pvpEMlcvY9rHd5KowR1d-c9xKuFyvMsLZjSo2zavc5k5k88O8zuNr0pWyGusdVu8gJ36BHLvQI"/>
+<article class="project-card flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant transition-all duration-300">
+<div class="aspect-video overflow-hidden">
+<img alt="Course booking App" class="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida/ADBb0uj_uX9C3FC_tDZeWJyy6wUgh-85PZmOojHWbPU5M4P3W-x0KrtK8xK8JM8qytcbf7zgwSQTtZVtSZdq1nYj63vE5OKEJtmfE3UyOh5sqBKEz30Vq7vaTTpCB1tbGQJl0wzGXUW9xTxLTTD6OEziCws2-0urHdyAuh6d58PLlwZLBGwXeKZkkyFjckUuiJNmmZWulPNXGYobCIHu3bB71fK__Rxmx-GVPN9icoxZ06lk9v9JQzMizgU-JPo">
 </div>
-<div class="p-stack-lg">
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Course booking App</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">
-                            A MERN-stack course enrollment system featuring user registration, authentication, and profile management.
-                        </p>
-<div class="flex flex-wrap gap-2">
-<span class="bg-primary/10 text-secondary px-3 py-1 rounded font-label-sm text-label-sm">MERN Stack</span>
-<span class="bg-primary/10 text-secondary px-3 py-1 rounded font-label-sm text-label-sm">Auth</span>
+<div class="p-6">
+<div class="flex gap-2 mb-4">
+<span class="font-label-code text-[12px] text-primary bg-primary/10 px-2 py-0.5 rounded border border-primary/20">MERN Stack</span>
+<span class="font-label-code text-[12px] text-secondary bg-secondary/10 px-2 py-0.5 rounded border border-secondary/20">React</span>
 </div>
+<h3 class="font-display text-headline-md text-on-surface mb-3">Course Booking App</h3>
+<p class="text-on-surface-variant font-body-md line-clamp-3">
+                                A MERN-stack course enrollment system featuring user registration, authentication, and profile management.
+                            </p>
 </div>
-</div>
+</article>
 <!-- Project 4 -->
-<div class="glass-card rounded-xl overflow-hidden group glow-hover transition-all duration-300">
-<div class="h-56 overflow-hidden bg-surface-container-lowest flex items-center justify-center">
-<img alt="E-commerce App" class="w-full h-full object-cover opacity-80 group-hover:scale-110 group-hover:opacity-100 transition-all duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0uj9HPokw6Plw2cdBCOn1GQ0IQqJlLrRakgHkAksX9Q0t3YojbY_lzNhCa9naH_SbnFsNDfZg45Dmhuv9Yj2hRY_bAP5mdWqMK9_4bKez7QzZqtClLB6QAIADxBzwjUqFuIsYTKxgYF0CRcuydULb5Cz8ESp0rc67WziDBycoTWVZS-MsIa1bUyl6KSq2r55teD_ddxJU-tLkKeEXVGnIrwLFdcXha6c1MhZVpwOMoznoouWXOZEvIVzbFw"/>
+<article class="project-card flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant transition-all duration-300">
+<div class="aspect-video overflow-hidden">
+<img alt="E-commerce App" class="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida/ADBb0ujk-DcdPazXsU09uUyEoW1P21n7kj9wuJDFmxMFxkt9Ath0xn3NcwsY93yTK7fCgazN7Ds1w3WvNnMZK2CLzRBmIYPKkYk3m7kUkBkZLexYo0I3kEfwC2SntbXP-voMjvzhMJQlvyg7ggnw6P5yqcd2zx7R660NDB7eXFn7NetNzsoFW9Dy6Ie4iJ6O2YRDWwiHvwnTCtDaW3fH3CkFLr9Rm-G40VGv3dnKfxeGf8MqiWseAA8pyd_q8d0">
 </div>
-<div class="p-stack-lg">
-<h3 class="font-headline-md text-headline-md text-primary mb-2">E-commerce App</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">
-                            MERN E-Commerce Platform. The platform features dynamic product catalog with filtering and sorting, and real-time search.
-                        </p>
-<div class="flex flex-wrap gap-2">
-<span class="bg-primary/10 text-secondary px-3 py-1 rounded font-label-sm text-label-sm">React</span>
-<span class="bg-primary/10 text-secondary px-3 py-1 rounded font-label-sm text-label-sm">E-commerce</span>
+<div class="p-6">
+<div class="flex gap-2 mb-4">
+<span class="font-label-code text-[12px] text-primary bg-primary/10 px-2 py-0.5 rounded border border-primary/20">MongoDB</span>
+<span class="font-label-code text-[12px] text-secondary bg-secondary/10 px-2 py-0.5 rounded border border-secondary/20">Analytics</span>
 </div>
+<h3 class="font-display text-headline-md text-on-surface mb-3">E-commerce App</h3>
+<p class="text-on-surface-variant font-body-md line-clamp-3">
+                                MERN E-Commerce Platform featuring dynamic product catalog, real-time search, and a comprehensive admin dashboard.
+                            </p>
 </div>
-</div>
+</article>
 <!-- Project 5 -->
-<div class="glass-card rounded-xl overflow-hidden group glow-hover transition-all duration-300">
-<div class="h-56 overflow-hidden bg-surface-container-lowest flex items-center justify-center">
-<img alt="Airline Mockup" class="w-full h-full object-cover opacity-80 group-hover:scale-110 group-hover:opacity-100 transition-all duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0uho8Sv16L2HH9Pt_AbHz-xQCk5w-exf8i1_lyKLWc5Tn7DwfKeWOu6Kn-ib5ELKRtMnbsqY-ztbf5BORDdQNi7y6u-drZIIbEF-hKncoZV4XjILMHQ7osddpo2xBt0GfI9UP-ThWW2eioMhUndHeAVS0ph_8r2T4a96z7hALkJfd6NQZ9Fc5cDf4DmHlvB5zzZv91QXIvoXNUgWzCrC8r-MPkTfOd5s59CUVi0dJ91ECZJtDOJCjx9nHA"/>
+<article class="project-card flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant transition-all duration-300">
+<div class="aspect-video overflow-hidden">
+<img alt="Airline Mockup" class="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida/ADBb0ujvrTZEkz1RMbYaw0Uct2yYnCQYunTCC6OQOS9NQDFZPu7W9zItPBNzCgV8TZ3x81bJXvRoHQD_5YDt3PV8twgt-jW9b3GAFmAVZQ1FIU9vLAdDu__M4JHyNNL2PKpUx2EW26JQ4QrKabSHNiUFaR-QkI3a0FjQAkJ1zTYa_0dJ1G2cVXqFmn4BUYi6d3SY1KfSnH4yk1xnzC1ihPmdtaf1AgihoTYecuLD0xraQpTRQ0Kh1KkP7DRhGcA">
 </div>
-<div class="p-stack-lg">
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Airline Booking Mockup</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">
-                            Conceptual design showcasing an intuitive UI for flight search, seat selection, and booking confirmation.
-                        </p>
-<div class="flex flex-wrap gap-2">
-<span class="bg-primary/10 text-secondary px-3 py-1 rounded font-label-sm text-label-sm">UI/UX</span>
-<span class="bg-primary/10 text-secondary px-3 py-1 rounded font-label-sm text-label-sm">Design</span>
+<div class="p-6">
+<div class="flex gap-2 mb-4">
+<span class="font-label-code text-[12px] text-primary bg-primary/10 px-2 py-0.5 rounded border border-primary/20">UI/UX</span>
+<span class="font-label-code text-[12px] text-secondary bg-secondary/10 px-2 py-0.5 rounded border border-secondary/20">Design</span>
 </div>
+<h3 class="font-display text-headline-md text-on-surface mb-3">Airline Booking Mockup</h3>
+<p class="text-on-surface-variant font-body-md line-clamp-3">
+                                Conceptual design showcasing an intuitive UI for flight search, seat selection, and booking confirmation.
+                            </p>
 </div>
-</div>
+</article>
 <!-- Project 6 -->
-<div class="glass-card rounded-xl overflow-hidden group glow-hover transition-all duration-300">
-<div class="h-56 overflow-hidden bg-surface-container-lowest flex items-center justify-center">
-<img alt="Airline Prototype" class="w-full h-full object-cover opacity-80 group-hover:scale-110 group-hover:opacity-100 transition-all duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0ugqpmJsMe21jd1NhRZOvqxZQj3VMYCL3CybunsUHJ72dGEicowHj8a7u5o9LBBbmyg9umwObnQa9LARpshWMiia6Fa8rrEcLeTRy_TamQ2glPmL_U-fr6XvN2inx-2syJAjMGGPMFptIY8Be3hmSC70CgfkUTfoqgAMkuN5Nbr1IeRZVm2gZjFjLNCGwHprDs9Jeakoi3d2ezG8ktMWhYnF5LZvdQZdPy2Z5WHaFpm7DeLE06G4WiSyuw"/>
+<article class="project-card flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant transition-all duration-300">
+<div class="aspect-video overflow-hidden">
+<img alt="Airline Prototype" class="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida/ADBb0uhTUI-UUxgi-XHGBqHgJtYKX4ClkVi3KE4agYf8XsDn6-yh1BLvWnb8s11i2GYznhEI_TfOCmh72ywy-mJk5qiiyZbQoeKoIKQmTakQGuvvJB_E2tx2nS-eyXaXBpnPnvf0N9qUxjZ_dnkfYGCbzCFjXNTb73m4C-Ah_Qg5csbY8_jlmiXJaw9m2Z_U1MMplfLgsb1v-heNqFh9JqBZ0KmkGQS7dOtbcA6qmUvLs1iNk9QBgcPiCpnvwyQ">
 </div>
-<div class="p-stack-lg">
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Airline Booking Prototype</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">
-                            Interactive prototype simulating end-to-end airline booking functionalities, including reservation and payment.
-                        </p>
-<div class="flex flex-wrap gap-2">
-<span class="bg-primary/10 text-secondary px-3 py-1 rounded font-label-sm text-label-sm">Prototype</span>
-<span class="bg-primary/10 text-secondary px-3 py-1 rounded font-label-sm text-label-sm">Full Stack</span>
+<div class="p-6">
+<div class="flex gap-2 mb-4">
+<span class="font-label-code text-[12px] text-primary bg-primary/10 px-2 py-0.5 rounded border border-primary/20">Prototyping</span>
+<span class="font-label-code text-[12px] text-secondary bg-secondary/10 px-2 py-0.5 rounded border border-secondary/20">Flow</span>
 </div>
+<h3 class="font-display text-headline-md text-on-surface mb-3">Airline Booking Prototype</h3>
+<p class="text-on-surface-variant font-body-md line-clamp-3">
+                                Interactive prototype simulating end-to-end airline booking functionalities, reservation, and ticket management.
+                            </p>
 </div>
+</article>
 </div>
 </div>
 </section>
 <!-- Tools Section -->
-<section class="py-section-gap bg-surface-dim" id="tools">
-<div class="max-w-container-max mx-auto px-margin-mobile">
-<div class="flex flex-col items-center mb-section-gap">
-<h2 class="font-headline-xl text-headline-xl text-text-primary mb-4">Tech Stack</h2>
-<div class="w-16 h-1 bg-primary rounded-full"></div>
+<section class="px-margin-mobile py-section-gap-mobile" id="tools">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-display text-headline-lg-mobile text-on-background mb-4">Technical Arsenal</h2>
+<p class="text-on-surface-variant">The tools I use to bring ideas to life.</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg">
+<div class="space-y-16">
 <!-- Front End -->
-<div class="glass-card p-stack-lg rounded-xl flex flex-col items-center text-center">
-<span class="material-symbols-outlined text-secondary text-5xl mb-4" data-icon="web">web</span>
-<h3 class="font-headline-md text-headline-md text-primary mb-stack-md">Front End</h3>
-<div class="flex flex-wrap justify-center gap-stack-sm">
-<span class="bg-surface-variant px-4 py-2 rounded-lg font-label-sm text-label-sm border border-border-subtle">HTML5</span>
-<span class="bg-surface-variant px-4 py-2 rounded-lg font-label-sm text-label-sm border border-border-subtle">CSS3</span>
-<span class="bg-surface-variant px-4 py-2 rounded-lg font-label-sm text-label-sm border border-border-subtle">JavaScript</span>
-<span class="bg-surface-variant px-4 py-2 rounded-lg font-label-sm text-label-sm border border-border-subtle">React</span>
+<div>
+<h3 class="font-label-code text-label-code text-primary tracking-widest uppercase mb-8 border-l-2 border-primary pl-4">Front End</h3>
+<div class="grid grid-cols-3 gap-6">
+<div class="flex flex-col items-center gap-3 p-4 bg-surface-container rounded-lg border border-outline-variant group">
+<img alt="HTML5" class="w-10 h-10 group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1IUEqRIWX-kDkH-sDIk-C2zxSpTlJYIg6LKjHBhynY-m_dAaOvCfEsB_ScfcUXCnJ7lW-7ZiY-ctYDf54nmODGSsEaAiw3ZG5Pkn4UVCMwCTpSpm6dL_FZccnp6DWcCRy9j75EHh-kpPUfev8Fm191wLpHGsYftSbNxAmoEVJqr56Siz3DiEUVSG1Grs_ersSPKoEFTRRDy1yVQg7lhx0asp7EqbsndNzoEP8pZue-VtRoKE3qFP5DIWg2ApeFlCZg3RWDqcGb9k">
+<span class="font-label-sm text-label-sm">HTML5</span>
+</div>
+<div class="flex flex-col items-center gap-3 p-4 bg-surface-container rounded-lg border border-outline-variant group">
+<img alt="CSS3" class="w-10 h-10 group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWrggEY8VFW3KRrcc5C_mw_i-LqFwoGAiCkIgaFVD77ZLka7iLh5NrNMURwOQJGPAc0OamdzN84PEvVcx9liF2k_XoEfMNzwdiPWfspClfeDeBX2NL6GEAJkFhDAvqYzyNM258h9hKq3KXZW7r_EbVvf4tUmgan4SERniGtwHWfrZDFCim26Ks2aeBvWZHuQtKYmpOKUVuZg5GeUnUbD6nMqGCZRVM_9shaup92LAbFFpmqPrhyr5HqXI1ScyeyzdBWA66hUeSKgw">
+<span class="font-label-sm text-label-sm">CSS3</span>
+</div>
+<div class="flex flex-col items-center gap-3 p-4 bg-surface-container rounded-lg border border-outline-variant group">
+<img alt="JavaScript" class="w-10 h-10 group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj0w8I4WUDDN7bDU8zMtj6anDZ93V6ofv_MPrnJ5ddfemqcAYefwqLHK-FRzVqLzPtaheWmWbtVYRXh_bWP5pmdhu8oI8PPk-FPoejdxfFNArx5I1ppQoJuHLzDY6p7oAJibPgQqZY2qmVuLFCoc6RCrwE3A7RNa6oKGvqr1kQS2srvN5YmKA0MaGF7hLliRTWd81_k00h3JfUVZU1sn4p7hcZ4gtT2NuCWMnQyH54ak8wYh_5m0PTyoOG_U_nw3aDi41TpFEV6ME">
+<span class="font-label-sm text-label-sm">JavaScript</span>
+</div>
 </div>
 </div>
 <!-- MERN -->
-<div class="glass-card p-stack-lg rounded-xl flex flex-col items-center text-center">
-<span class="material-symbols-outlined text-secondary text-5xl mb-4" data-icon="database">database</span>
-<h3 class="font-headline-md text-headline-md text-primary mb-stack-md">MERN Stack</h3>
-<div class="flex flex-wrap justify-center gap-stack-sm">
-<span class="bg-surface-variant px-4 py-2 rounded-lg font-label-sm text-label-sm border border-border-subtle">MongoDB</span>
-<span class="bg-surface-variant px-4 py-2 rounded-lg font-label-sm text-label-sm border border-border-subtle">Express</span>
-<span class="bg-surface-variant px-4 py-2 rounded-lg font-label-sm text-label-sm border border-border-subtle">React</span>
-<span class="bg-surface-variant px-4 py-2 rounded-lg font-label-sm text-label-sm border border-border-subtle">Node.js</span>
+<div>
+<h3 class="font-label-code text-label-code text-secondary tracking-widest uppercase mb-8 border-l-2 border-secondary pl-4">MERN Stack</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="flex flex-col items-center gap-3 p-4 bg-surface-container rounded-lg border border-outline-variant group">
+<img alt="MongoDB" class="w-10 h-10 group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOED7cRuUWn9HmEDhpvyzvtFHumh5Y2lTFkDO6-JXxeUa-o8CS2DwIW50mElMBxjuY30exYDWybOlyvAnDUQ1AwFovtKQ47m4E99LqWKOYPF8Jo6yca_pHahqfRcWUL2gla0iIZ4Uh8tkL_ofPMALmUL_u5A_JwpkyWOoy73tBkVzaaXr1zdfRZWcdooZsR50Vc-5jeCqpDE-955TUNMKGj-SzBNA4NY51NXXwAEePLtBuGgM_CdDhlCStFg36iz0ZrnEaI2Z8Y6Q">
+<span class="font-label-sm text-label-sm">MongoDB</span>
 </div>
+<div class="flex flex-col items-center gap-3 p-4 bg-surface-container rounded-lg border border-outline-variant group">
+<img alt="Express" class="w-10 h-10 group-hover:scale-110 transition-transform invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWdpUNO4mkUdQ2_yO-c0pP5WwbDz83uPo2tRxQEi9yvjro0tnKH5bPXw0j2F0xNGsliha0Tv-hHmNOyYsX88tUfdKfL8Oct0YnvgOolv5R41fZCnKSLwG4o3pzrZwhVruK_BHnC0rNqwqsFRqYdxq5iKNZITLswOneq4zbhIyNadvq294_4yqogxdg3WEjcyaLBM61u9RDu2ZVeayFCNGBvgjuzyocv7NHSF-Q4Q_VlFBO7P3fg5sdg92SsbiRAwtyC91lGUAAJww">
+<span class="font-label-sm text-label-sm">Express</span>
 </div>
-<!-- Other Tools -->
-<div class="glass-card p-stack-lg rounded-xl flex flex-col items-center text-center">
-<span class="material-symbols-outlined text-secondary text-5xl mb-4" data-icon="build">build</span>
-<h3 class="font-headline-md text-headline-md text-primary mb-stack-md">Other Tools</h3>
-<div class="flex flex-wrap justify-center gap-stack-sm">
-<span class="bg-surface-variant px-4 py-2 rounded-lg font-label-sm text-label-sm border border-border-subtle">Git</span>
-<span class="bg-surface-variant px-4 py-2 rounded-lg font-label-sm text-label-sm border border-border-subtle">Postman</span>
-<span class="bg-surface-variant px-4 py-2 rounded-lg font-label-sm text-label-sm border border-border-subtle">VS Code</span>
-<span class="bg-surface-variant px-4 py-2 rounded-lg font-label-sm text-label-sm border border-border-subtle">Heroku</span>
+<div class="flex flex-col items-center gap-3 p-4 bg-surface-container rounded-lg border border-outline-variant group">
+<img alt="React" class="w-10 h-10 group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2tm2K213T9FQYpIoYHPh9EybXtXlrTYzOijDSKqJ8sVveWRHVfmIGIuMSCeaG_7td78BCcawnk4-k3yU-iVda5CCE--JG_Cn2CK7KK5K7XjshHA80zZfDknQ8gql6FqMXErxCOjjZHH359rYbF9VpGN6LFSlOQhbh-tZEcndInmvCrABjynIWWVdALikRzuSCeXKoVw5xOOernAIfdeC0V3OXctPxAAwKRT-rvDELPAqDP35pTObNJEcsvu6neQP8kO8_pwYPMwE">
+<span class="font-label-sm text-label-sm">React</span>
+</div>
+<div class="flex flex-col items-center gap-3 p-4 bg-surface-container rounded-lg border border-outline-variant group">
+<img alt="Node.js" class="w-10 h-10 group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcBVikN6L_tHxKz42e9xiUFEbr8i1a2LwReZNkV7fbO9rvQQ4SycXU5HoR9Gginb1yvaKrebwLPo0Nc3mwEHJGMrArcDZMTJvauvVlq3f8UIU1dPEsz0Rtew8bAEQuzbWksfGdBl40Zin9XhvVyzabsN-Lvracz24znUDSljQLai3TGd5zESnAlbaVnPPHXDh1QEiZRoWX2Be53Ciwkdx_zSUOcsYXDmxPtqFyKvI23f1XH1ykOOoRMQxKw3TenwbbFIVmeMguXNY">
+<span class="font-label-sm text-label-sm">Node.js</span>
+</div>
 </div>
 </div>
 </div>
 </div>
 </section>
 <!-- Contact Section -->
-<section class="py-section-gap px-margin-mobile" id="contact">
-<div class="max-w-[800px] mx-auto">
-<div class="flex flex-col items-center mb-stack-lg">
-<h2 class="font-headline-xl text-headline-xl text-text-primary mb-4">Get In Touch</h2>
-<p class="text-on-surface-variant text-center mb-8">Have a project in mind? Let's build something amazing together.</p>
-</div>
-<div class="glass-card p-stack-lg rounded-xl">
-<form class="space-y-stack-md">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<section class="px-margin-mobile py-section-gap-mobile bg-surface-container" id="contact">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
 <div>
-<label class="block font-label-sm text-label-sm text-on-surface mb-2">Full Name</label>
-<input class="w-full bg-surface-container border-b-2 border-border-subtle focus:border-primary focus:ring-0 transition-colors py-3 px-4 rounded-t-lg" placeholder="John Doe" type="text"/>
+<h2 class="font-display text-headline-lg-mobile text-primary mb-6">Let's Connect</h2>
+<p class="text-on-surface-variant mb-8">
+                            Open for collaborations and new opportunities. Send me a message or find me on these platforms.
+                        </p>
+<div class="flex gap-6 mb-12">
+<a class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container-high border border-outline-variant text-primary hover:bg-primary hover:text-on-primary transition-all" href="https://www.linkedin.com/in/paulopaco/">
+<img alt="LinkedIn" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATHbKYHRT0elAb5Clv766O94sJlya6lbk531H2JIVGFYr-ZhsRd5EzFjQwIGmVDcSxvj6hTcK8H1H-aFbXB1vhu0q-H3nQtzGn_I0TiTNUSNOkJDeN9q8v9K2oMLnMjY-Y6CPzCQ7kqyYaeM0gvtugV4CVvM3Eyo3fxcuMaDXLeRGR3oCGFeAISdWOv9z4yqNXV9NusJlHHnGUj2pPabiHNvqoCL_QdYkkJICcUo0U-5AM5KwMzGNuCY9hWYS6NhOQ8cB0lV6v9o4">
+</a>
+<a class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container-high border border-outline-variant text-primary hover:bg-primary hover:text-on-primary transition-all" href="https://github.com/pvtopaco-arch">
+<img alt="GitHub" class="w-6 h-6 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5OR6tB15dubRbNoM-CwwteRgJN32jun_aytJCAGgJAd73hYx3FuVBzOUbxa8-zRheBrwB4dHgqH2BVICg2A0oAwiMgmKWfbHs7EOOk8FyzFI1WRSK2FpK5vEOE6oDQGagWAp8stNH_nNEGT3NM_cYVQ9s6RtsO-2ujRmWwBzKhbZiq_P1r_eG6iflfS2goE640M_p853DW2UfhV-5ad6npX-ygzQzJovOIUDNSJqr7LX29vTeeU9v1VWaocdZRrt105a_ULqO7EE">
+</a>
 </div>
-<div>
-<label class="block font-label-sm text-label-sm text-on-surface mb-2">Email Address</label>
-<input class="w-full bg-surface-container border-b-2 border-border-subtle focus:border-primary focus:ring-0 transition-colors py-3 px-4 rounded-t-lg" placeholder="john@example.com" type="email"/>
+<!-- Map Integration -->
+<div class="rounded-xl overflow-hidden border border-outline-variant h-48 relative">
+<div class="absolute inset-0 bg-primary/5"></div>
+<img alt="Map Placeholder" class="w-full h-full object-cover opacity-50 grayscale" data-location="Quezon City, Manila" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdXtlc17Ol4nr-jM2yBbXePVPWLNHd-hi9PigRqNCOW6-RSGbbBPtcPmdNdENmoiglarhS-PT30JdOQWLYgRS6_gNLMCUR6KR98vnYRV34atELvlJKGKFFuU5O2ysA1R25NHrm8lw7CtuPoZtzWdRv25aW9YwkklkCptxsCcMNeTzTnLW7aAGRKO1CVUnR-ayAw6lPm1TAli1sJadIomz8nU72kQfxRNjskrCS5YJcSoYSni9jU151Yf10sxcJA1udxmn480qffcE">
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-surface-container p-4 rounded-lg shadow-xl border border-primary/20 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span class="font-label-sm">Quezon City, PH</span>
 </div>
 </div>
-<div>
-<label class="block font-label-sm text-label-sm text-on-surface mb-2">Message</label>
-<textarea class="w-full bg-surface-container border-b-2 border-border-subtle focus:border-primary focus:ring-0 transition-colors py-3 px-4 rounded-t-lg" placeholder="Tell me about your project..." rows="4"></textarea>
 </div>
-<button class="w-full bg-primary-container text-on-primary-container py-4 rounded-lg font-label-sm text-label-sm hover:opacity-90 transition-opacity" type="submit">
+</div>
+<form class="space-y-6">
+<div class="space-y-2">
+<label class="font-label-code text-label-code text-on-surface-variant block">NAME</label>
+<input class="w-full bg-surface-container-high border-outline-variant rounded-lg p-4 focus:ring-1 focus:ring-primary focus:border-primary text-on-surface placeholder:text-outline" placeholder="Your Full Name" type="text">
+</div>
+<div class="space-y-2">
+<label class="font-label-code text-label-code text-on-surface-variant block">EMAIL</label>
+<input class="w-full bg-surface-container-high border-outline-variant rounded-lg p-4 focus:ring-1 focus:ring-primary focus:border-primary text-on-surface placeholder:text-outline" placeholder="email@example.com" type="email">
+</div>
+<div class="space-y-2">
+<label class="font-label-code text-label-code text-on-surface-variant block">MESSAGE</label>
+<textarea class="w-full bg-surface-container-high border-outline-variant rounded-lg p-4 focus:ring-1 focus:ring-primary focus:border-primary text-on-surface placeholder:text-outline" placeholder="How can I help you?" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary-container text-on-primary-container font-bold py-4 rounded-xl hover:brightness-110 transition-all" type="submit">
                             Send Message
                         </button>
 </form>
@@ -350,28 +419,48 @@
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-surface-dim border-t border-border-subtle w-full py-stack-lg">
-<div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile max-w-container-max mx-auto gap-stack-md">
-<div class="flex flex-col items-center md:items-start">
-<span class="font-label-sm text-label-sm text-on-surface font-bold">ENGINEER.IO</span>
-<p class="font-body-md text-body-md text-text-secondary mt-1">© 2024 Engineering Portfolio. Built with Precision.</p>
+<footer class="bg-surface-dim border-t border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-center py-section-gap-mobile md:py-12 px-margin-mobile md:px-gutter w-full max-w-container-max mx-auto gap-8">
+<div class="text-center md:text-left">
+<p class="font-display text-headline-md text-primary mb-2">Paul Vincent Opaco</p>
+<p class="text-on-surface-variant font-label-sm">Full Stack Web Developer</p>
 </div>
-<div class="flex gap-stack-lg">
-<a class="text-text-secondary hover:text-primary transition-colors" href="#">
-<span class="material-symbols-outlined" data-icon="terminal">terminal</span> Github
-                </a>
-<a class="text-text-secondary hover:text-primary transition-colors" href="#">
-<span class="material-symbols-outlined" data-icon="person">person</span> LinkedIn
-                </a>
+<div class="text-center md:text-right">
+<p class="text-on-surface-variant font-body-md mb-4">© 2024 ARCHITECT.FS. Built with precision.</p>
+<div class="flex justify-center md:justify-end gap-6">
+<a class="text-on-surface-variant hover:text-secondary-fixed transition-colors font-label-sm" href="#">GitHub</a>
+<a class="text-on-surface-variant hover:text-secondary-fixed transition-colors font-label-sm" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-secondary-fixed transition-colors font-label-sm" href="#">Email</a>
 </div>
-<div class="text-text-secondary text-right font-label-sm text-label-sm">
-<p>Paul Vincent Opaco</p>
-<p class="opacity-50">Full Stack Developer</p>
 </div>
 </div>
 </footer>
 <script>
-        // Smooth scrolling for navigation links
+        function toggleDrawer() {
+            const drawer = document.getElementById('drawer');
+            const content = document.getElementById('drawer-content');
+            
+            if (drawer.classList.contains('hidden')) {
+                drawer.classList.remove('hidden');
+                setTimeout(() => {
+                    content.classList.remove('translate-x-full');
+                }, 10);
+            } else {
+                content.classList.add('translate-x-full');
+                setTimeout(() => {
+                    drawer.classList.add('hidden');
+                }, 300);
+            }
+        }
+
+        // Close drawer on nav link click
+        document.querySelectorAll('#drawer nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                toggleDrawer();
+            });
+        });
+
+        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -379,18 +468,6 @@
                     behavior: 'smooth'
                 });
             });
-        });
-
-        // Sticky header opacity change on scroll
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.classList.add('bg-opacity-95');
-                header.classList.add('shadow-md');
-            } else {
-                header.classList.remove('bg-opacity-95');
-                header.classList.remove('shadow-md');
-            }
         });
     </script>
 </body></html>
